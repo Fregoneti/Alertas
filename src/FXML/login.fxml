@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.loginController">
+   <children>
+      <ImageView fitHeight="34.0" fitWidth="154.0" layoutX="223.0" layoutY="25.0" AnchorPane.rightAnchor="223.0" AnchorPane.topAnchor="25.0">
+         <image>
+            <Image url="@../../../GeneratePDFText/src/Utils/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="113.0" layoutY="155.0" text="Usuario">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="200.0" text="Contraseña">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usuario" layoutX="223.0" layoutY="156.0" AnchorPane.rightAnchor="228.0" AnchorPane.topAnchor="156.0" />
+      <PasswordField fx:id="contraseña" layoutX="217.0" layoutY="201.0" AnchorPane.rightAnchor="228.0" AnchorPane.topAnchor="201.0" />
+      <CheckBox fx:id="recordarPass" layoutX="233.0" layoutY="278.0" mnemonicParsing="false" text="Recordar contraseña" AnchorPane.rightAnchor="253.0" AnchorPane.topAnchor="246.0" />
+      <CheckBox fx:id="mostrarPass" layoutX="217.0" layoutY="283.0" mnemonicParsing="false" text="Mostrar contraseña" AnchorPane.rightAnchor="259.0" AnchorPane.topAnchor="283.0" />
+      <Button fx:id="entrar" layoutX="408.0" layoutY="201.0" mnemonicParsing="false" onAction="#login" text="Entrar" />
+   </children>
+</AnchorPane>

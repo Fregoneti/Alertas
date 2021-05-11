@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AlertasHomeController">
+   <children>
+      <SplitPane dividerPositions="0.27759197324414714" layoutX="153.0" layoutY="67.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.8585858585858586" layoutX="8.0" layoutY="150.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="175.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TableView fx:id="table" layoutX="-19.0" layoutY="37.0" prefHeight="337.0" prefWidth="161.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="n_Alerta" prefWidth="75.0" text="Alerta" />
+                                  <TableColumn prefWidth="85.0" text="C2" />
+                                </columns>
+                              </TableView>
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Button layoutX="-5.0" layoutY="24.0" mnemonicParsing="false" onAction="#crearAlerta" prefHeight="31.0" prefWidth="57.0" text="+" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="-5.0" />
+                              <Button layoutX="109.0" layoutY="21.0" mnemonicParsing="false" onAction="#deleteAlerta" prefHeight="31.0" prefWidth="52.0" text="-" AnchorPane.bottomAnchor="-2.0" AnchorPane.rightAnchor="0.0" />
+                              <ComboBox layoutY="2.0" prefHeight="25.0" prefWidth="161.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
